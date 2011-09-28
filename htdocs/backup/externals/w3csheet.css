@@ -1,0 +1,157 @@
+/* Styles for Version 5 and higher Browsers*/
+/* Styles for the Dropdown Menus */
+.daddyTbl { background-color : #666666 }
+.childTbl {
+	background-color : #D4D0C8;
+	border-top : 1px solid #FFFFFF;
+	text-indent: 0px;
+}
+.childTbl a {
+	color : #FFFFFF;
+	display : block;
+	font : 13px Verdana, Arial, Helvetica, sans-serif;
+	padding : 2px 0px 2px 12px;
+	position : relative;
+	text-decoration : none
+}
+.childTbl a:hover {
+	background-color : #B9BCC8;
+	color : #666666;
+	text-decoration : none
+}
+.childTxt {
+	background-color : #BBBBBB;
+	border-top : 1px solid #FFFFFF;
+	color : #333333;
+	font : 13px Verdana, Arial, Helvetica, sans-serif;
+	padding : 2px 0px 2px 12px
+}
+
+
+/* Browser Fixes and Workarounds */
+.nn6img { display : block }
+p { margin-top : 0px }
+td { padding : 0px }
+
+/* The Captions and Descriptions For the Portfolio Images */
+.imgCaptionshd {
+	color : #660000;
+	font : bold 16px Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom : 6px;
+	margin-top : 0px
+}
+.imgCaptions {
+	color : #999999;
+	font : 12px "Trebuchet MS", "Comic Sans MS", Arial, sans-serif;
+	margin : 3px 0px 6px 3px
+}
+.imgCaptionsbg {
+	background-image : url(../assets/img_main/loading.gif);
+	background-repeat : no-repeat;
+	color : #999999;
+	font : 12px "Trebuchet MS", "Comic Sans MS", Arial, sans-serif;
+	margin-bottom : 6px;
+	margin-top : 3px
+}
+.imgCaptions a:link { color : #999999; font-weight: bold}
+.imgCaptions a:visited { color : #999999; font-weight: bold}
+.imgCaptions a:hover { color : #999999; text-decoration : underline ; font-weight: bold}
+
+/* The Main Content Layer */
+.maintext { 
+	text-align : justify;
+	color : #333333;
+	font : 14px Verdana, Arial, Helvetica, sans-serif
+}
+.maintext a:link { color : #660000; font-weight: bold}
+.maintext a:visited { color : #660000; font-weight: bold}
+.maintext a:hover { color : #660000; text-decoration : underline ; font-weight: bold}
+.maintext h1 {
+	color : #666666;
+	font : bold 16px Verdana, Arial, Helvetica, sans-serif;
+	letter-spacing : 3px
+}
+
+p.mnlinkbar {
+	font : bold 11px Verdana, Arial, Helvetica, sans-serif;
+	margin: 24px 0px 12px 0px;
+	text-align: left
+; color: #666666
+}
+
+/* The Sidebar */
+.sidebar {
+	border-left : 1px dotted #999999;
+	padding : 0px 0px 20px 20px;
+	color : #ABA496;
+	font : 12px "Trebuchet MS", "Comic Sans MS", Arial, sans-serif;
+}
+
+.sidebar h2 {
+	color : #666666;
+	font : bold 16px Verdana, Arial, Helvetica, sans-serif;
+	margin: 0px 0px 6px 0px;
+}
+.sidebar h3 {
+	color : #990000;
+	font : bold 16px Verdana, Arial, Helvetica, sans-serif;
+	margin-top : 16px 0px 0px 0px;
+}
+.sidebar a:link { color : #666666 }
+.sidebar a:visited { color : #666666 }
+.sidebar a:hover { color : #000000 }
+
+/*Style Applied to the Paragraphs for the Sidebar Links */
+p.navSubs {
+	color : #333333;
+	font : 11px Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom : 4px;
+	margin-top : 0px;
+	width : 140px
+}
+.navSubs a {
+	background-color : #F4F4F4;
+	border : 1px solid #999999;
+	color : #333333;
+	display : block;
+	padding : 4px 0px 2px 12px;
+	text-decoration : none;
+	width : 100%
+}
+.navSubs a:hover {
+	background-color : #F3EBCF;
+	border : 1px solid #999999;
+	color : #999999;
+	text-decoration : none
+}
+
+/* The Text Links and copyright at Bottom of Portfolio Pages */
+.linkbar a:link { color : #FFFFFF; text-decoration : underline }
+.linkbar a:visited { color : #666666; text-decoration : underline }
+.linkbar a:hover { color : #D4D0C8; text-decoration : underline }
+p.linkbar {
+	color : #000066;
+	font : bold 10px Verdana, Arial, Helvetica, sans-serif;
+	margin: 16px 0px 6px 3px;
+	text-align: left;
+}
+
+/* Popup Layers*/
+.popupDaddy { background-color : #666666 }
+.popupChild { background-color : #D4D0C8 }
+.popupChild p {
+	color : #666666;
+	font : 12px Arial, Helvetica, sans-serif;
+	margin: 12px;
+}
+.popupChild h1 {
+	color : #FFFFFF;
+	font : bold 16px Verdana, Arial, Helvetica, sans-serif;
+	margin: 12px;
+}
+
+
+/* Portfolio Menu Scrolling Layer*/
+#LayerSubmenu {position:absolute; left:0px; top:0px; width:689px; z-index:102;}a {  text-decoration: none; font-weight: bold}
+.copyright {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; color: #000000; text-align: right; font-weight: bold}
+.thumb { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; color: #FFFFFF }

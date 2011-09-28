@@ -1,0 +1,77 @@
+# -FrontPage-
+AddDefaultCharset UTF-8
+Header unset ETag
+FileETag None
+RewriteEngine on
+RewriteCond %{http_host} ^maskitalia.com [nc]
+RewriteRule ^(.*)$ http://www.maskitalia.com/$1 [r=301,nc] 
+# Nick's Performance Settings
+# Turn on for speed
+SetOutputFilter DEFLATE
+# Netscape 4.x has some problems...
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+
+# Netscape 4.06-4.08 have some more problems
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+
+# MSIE masquerades as Netscape, but it is fine
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+# Don't compress images
+SetEnvIfNoCase Request_URI \
+\.(?:gif|jpe?g|png|zip|sit|rar|pdf|bz2|t?gz)$ no-gzip dont-vary
+
+# Make sure proxies don't deliver the wrong content
+Header append Vary User-Agent env=!dont-vary
+
+
+# If client accepts compressed files
+#RewriteCond %{HTTP:Accept-Encoding} gzip
+# and if compressed file exists
+#RewriteCond %{REQUEST_FILENAME}.gz -f
+# send .html.gz instead of .html
+#RewriteRule ^(.+\.htm)$ /$1.gz [L]
+
+
+#Header unset ETag
+#FileETag None
+ExpiresActive On
+ExpiresDefault "access plus 1 seconds"
+ExpiresByType text/html "access plus 1 seconds"
+ExpiresByType image/gif "access plus 2592000 seconds"
+ExpiresByType image/jpeg "access plus 2592000 seconds"
+ExpiresByType image/png "access plus 2592000 seconds"
+ExpiresByType text/css "access plus 2592000 seconds"
+ExpiresByType text/javascript "access plus 2592000 seconds"
+ExpiresByType application/x-javascript "access plus 2592000 seconds"
+ExpiresByType application/javascript "access plus 2592000 seconds"
+#<IfModule mod_headers.c>
+#<FilesMatch "\\.(ico|pdf|flv|jpg|jpeg|png|gif|swf)$">
+#Header set Cache-Control "max-age=2592000, public"
+#</FilesMatch>
+#<FilesMatch "\\.(css)$">
+# Header set Cache-Control "max-age=604800, public"
+#</FilesMatch>
+#<FilesMatch "\\.(js)$">
+#Header set Cache-Control "max-age=216000, private"
+#</FilesMatch>
+#<FilesMatch "\\.(xml|txt)$">
+#Header set Cache-Control "max-age=216000, public, must-revalidate"
+#</FilesMatch>
+#<FilesMatch "\\.(html|htm|php)$">
+#Header set Cache-Control "max-age=1, private, must-revalidate"
+#</FilesMatch>
+#</IfModule>
+
+#RewriteRule ^order$ https://www.maskitalia.com/secure/orderController.php
+RewriteRule orderform.htm$ https://www.maskitalia.com/secure/orderform.php
+#RewriteRule ^orderform.html$ https://www.maskitalia.com/secure/orderform.php
+
+#RewriteCond {SERVER_PORT} 443 
+#RewriteCond {REQUEST_URI} != ^secureorderform.htm$
+#RewriteRule ^.*$ http://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+
+#RewriteRule ^/normal/secure(/.*) https://%{HTTP_HOST}orderform.htm [R=301,L]
+#RewriteRule  ^http://www.maskitalia.com/orderform.htm$ https://www.maskitalia.com/orderform.htm
+
+#RewriteRule ^orderform.htm$ https://%{HTTP_HOST}/orderform.htm [R=301,L]
+ErrorDocument 500 http://www.maskitalia.com

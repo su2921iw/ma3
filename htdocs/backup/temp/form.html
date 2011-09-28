@@ -1,0 +1,239 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Feedback</title>
+<link href="form.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<form name="frm" action="/cgi-bin/FormMail.form.pl" method="post" onsubmit="return validate(frm)">
+<table width="750" border="0" cellspacing="0" cellpadding="0">  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="title"><font size="+1">Order Form</font></td>
+  </tr>
+  <tr>
+    <td><hr size="1" noshade></td>
+  </tr>  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="text">This is our order form</td>
+  </tr>
+  <tr>
+    <td class="text">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="text"><table width="81%" border="0" cellspacing="6" cellpadding="0">
+      <tr>
+        <td>&nbsp;</td>
+        <td class="text"><div align="left">Name</div></td>
+        <td colspan="3"><input type="text" name="Name"></td>
+      </tr>
+      <tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><div align="left"></div></td>
+        <td colspan="3">&nbsp;</td>
+      </tr>
+      <tr>
+        <td valign="top" class="text">&nbsp;</td>
+        <td valign="top" class="text"><div align="left">Shipping Address</div></td>
+        <td colspan="3"><textarea name="Shipping Address" cols="45" rows="10"></textarea></td>
+      </tr>
+      <tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><div align="left"></div></td>
+        <td colspan="3">&nbsp;</td>
+      </tr>
+      <tr>
+        <td valign="top" class="text">&nbsp;</td>
+        <td valign="top" class="text"><div align="left">Billing Address</div></td>
+        <td colspan="3"><textarea name="Billing Address" cols="45" rows="10"></textarea></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="text"><div align="left">Phone</div></td>
+        <td colspan="3"><input type="text" name="Phone"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="text"><div align="left">Fax</div></td>
+        <td colspan="3"><input type="text" name="Fax"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="text"><div align="left">Email</div></td>
+        <td colspan="3"><input type="text" name="formmail_mail_email"></td>
+      </tr>
+      <tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><div align="left"></div></td>
+        <td colspan="3">&nbsp;</td>
+      </tr>
+      <tr>
+        <td valign="top" class="text">&nbsp;</td>
+        <td valign="top" class="text"><div align="left">Mask Orders</div></td>
+        <td colspan="3"><textarea name="Mask Orders" cols="45" rows="10"></textarea></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="text"><div align="left">Shipping</div></td>
+        <td colspan="3"><input type="text" name="Shipping"></td>
+      </tr>
+      <tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><div align="left"></div></td>
+        <td colspan="3">&nbsp;</td>
+      </tr>
+      <tr>
+        <td valign="top" class="text">&nbsp;</td>
+        <td valign="top" class="text"><div align="left">Comments or Questions</div></td>
+        <td colspan="3"><textarea name="Comments or Questions" cols="45" rows="10"></textarea></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="text"><div align="left">Payment Type</div></td>
+        <td colspan="3"><input type="text" name="Payment Type"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="text"><div align="left">Credit Card Number</div></td>
+        <td colspan="3"><input type="text" name="Credit Card Number"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="text"><div align="left">Expiration Date</div></td>
+        <td colspan="3"><input type="text" name="Expiration Date"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="text"><div align="left">CVN Number</div></td>
+        <td colspan="3"><input type="text" name="CVN Number"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td width="35%">&nbsp;</td>
+        <td width="13%">&nbsp;</td>
+        <td width="35%">&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td><input type="submit" name="Submit" value="Submit">
+            <input type="reset" name="Submit" value="Clear"></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</form>
+	<script language="javascript">
+	function validate(frm) {
+		var inputFields = new Array("Name" ,"Shipping Address" ,"formmail_mail_email" ,"Mask Orders" ,"Shipping" ,"Payment Type");
+		var counter;
+		var name;
+		var msg = "Please complete the following fields:\n";
+		var badFields = "";
+		for (counter = 0; counter < inputFields.length; counter++) {
+			name = inputFields[counter];
+			if (frm.elements[name].value.length == 0) {
+				if (name == "formmail_mail_email") {
+					badFields = badFields + "  - Email \n";
+				} else {
+					badFields = badFields + "  - " + name + "\n";
+				}
+			}
+		}
+		if (badFields.length != 0) {
+			alert(msg + badFields);
+			return false;
+		}
+		if (frm.formmail_mail_email.value.length > 0) {
+			return emailCheck(frm.formmail_mail_email.value);
+		} else {
+			return true;
+		}
+	}
+
+	function emailCheck(emailStr) {
+		var emailPat=/^(.+)@(.+)$/;
+		var specialChars="\\(\\)<>@,;:\\\\\\\"\\.\\[\\]";
+		var validChars="\[^\\s" + specialChars + "\]";
+		var quotedUser="(\"[^\"]*\")";
+		var ipDomainPat=/^\[(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})\]$/;
+		var atom=validChars + '+';
+		var word="(" + atom + "|" + quotedUser + ")";
+		var userPat=new RegExp("^" + word + "(\\." + word + ")*$");
+		var domainPat=new RegExp("^" + atom + "(\\." + atom +")*$");
+		var matchArray=emailStr.match(emailPat);
+
+		if (matchArray==null) {
+			alert("Email address seems incorrect (check @ and .'s)");
+			return false;
+		}
+
+		var user=matchArray[1];
+		var domain=matchArray[2];
+
+		if (user.match(userPat)==null) {
+    			alert("The username doesn't seem to be valid.");
+			return false;
+		}
+
+		var IPArray=domain.match(ipDomainPat);
+		if (IPArray!=null) {
+	  		for (var i=1;i<=4;i++) {
+			    if (IPArray[i]>255) {
+		        	alert("Destination IP address is invalid!");
+				return false;
+	 	   		}
+    			}
+    			return true;
+		}
+
+		var domainArray=domain.match(domainPat);
+		if (domainArray==null) {
+			alert("The domain name doesn't seem to be valid.");
+    			return false;
+		}
+
+		var atomPat=new RegExp(atom,"g");
+		var domArr=domain.match(atomPat);
+		var len=domArr.length;
+		if (domArr[domArr.length-1].length<2 || domArr[domArr.length-1].length>3) {
+		   alert("The address must end in a three-letter domain, or two letter country.");
+   			return false;
+		}
+
+		if (len<2) {
+   			var errStr="This address is missing a hostname!";
+			alert(errStr);
+   		return false;
+		}
+
+ 		return true;
+	}
+</script>
+</body>
+</html>

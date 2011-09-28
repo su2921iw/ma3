@@ -1,0 +1,457 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd"> 
+<html>
+<head>
+<title>Mask Italia -Order Form</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href=" externals/v4sheet.css" type="text/css">
+<script type="text/javascript" src=" externals/pkscripts.js"></script>
+<style type="text/css">
+<!--
+body {
+	background-color: #666666;
+	}
+#LayerThumbs {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:472px;
+	z-index:11
+}
+-->
+</style>
+<script language="JavaScript">
+function P7_OpResizeFix(a) { 
+if(!window.opera){return;}if(!document.p7oprX){
+ document.p7oprY=window.innerWidth;document.p7oprX=window.innerHeight;
+ document.onmousemove=P7_OpResizeFix;
+ }else{if(document.p7oprX){
+  var k=document.p7oprX-window.innerHeight;
+  var j=document.p7oprY - window.innerWidth;
+  if(k>1 || j>1 || k<-1 || j<-1){
+  document.p7oprY=window.innerWidth;document.p7oprX=window.innerHeight;
+  location.reload();}}}
+}
+P7_OpResizeFix();
+</script>
+<link rel="stylesheet" href="externals/mask.css" type="text/css">
+
+</head>
+
+<body onLoad=";P7_alignLL2('bottomLayer','P7ShowPL1','G',0,0);P7_autoLayers(0,'P7ShowPL1')" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="96%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr align="right"> 
+    <td bgcolor="#FFFFFF" colspan="4" valign="top" height="133"> 
+      <div align="left"> 
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" background="http://image2-maskitalia.nicolasblock.com/page_images/pk_pgbg_long.jpg">
+          <tr> 
+            <td> 
+              <div align="left"><img src="http://image2-maskitalia.nicolasblock.com/page_images/shim.gif" width="738" height="118" alt="Venetian Masks &amp; Artworks"></div>
+              <div align="right"><img src="http://image2-maskitalia.nicolasblock.com/page_images/MAIN_NAV.gif" width="490" height="13" usemap="#MapNav" border="0" alt="venetian masks and artwork"> 
+<map name="MapNav"> 
+  <area shape="rect" coords="390,2,488,12" href="maskitaliaheadquarters.htm" alt="Mask Italia Headquarters Locations" title="Mask Italia Headquarters Locations" onFocus="if(this.blur)this.blur()">
+  <area shape="rect" coords="328,1,384,26" href="maskhistory.htm" alt="History of Venetian Masks" title="History of Venetian Masks" onFocus="if(this.blur)this.blur()">
+  <area shape="rect" coords="248,1,319,12" href="wholesale.htm" alt="Wholesale Information on venetian masks and italian masks" title="Wholesale Information on venetian masks and italian masks" onFocus="if(this.blur)this.blur()">
+  <area shape="rect" coords="131,1,235,13" href="eventsparties.htm" alt="Sponsored Events and Parties  with Venetian Masks" title="Sponsored Events and Parties  with Venetian Masks" onFocus="if(this.blur)this.blur()">
+  <area shape="rect" coords="-1,1,121,14" href="michela.htm" alt="Italian Masks &amp; Artworks" title="Italian Masks &amp; Artworks" onFocus="if(this.blur)this.blur()">
+</map>
+</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div align="right"></div>
+    </td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFFF" align="left" valign="bottom" colspan="3"> 
+      <p>&nbsp;</p>
+      <p>&nbsp;&nbsp;&nbsp;<img src="http://image2-maskitalia.nicolasblock.com/page_images/orderform.gif" width="171" height="40" alt="Mask Italia Order Form"> 
+      </p>
+    </td>
+    <td bgcolor="#FFFFFF" align="right" valign="top" height="42" width="525"> 
+      <p><img src="http://image2-maskitalia.nicolasblock.com/page_images/top_phone.gif" width="147" height="61" alt="call for italian masks and venetian masks"><br>
+      </p>
+    </td>
+  </tr>
+  <tr> 
+    <td bgcolor="#FFFFFF" width="20" align="left" valign="top"><img src="http://image2-maskitalia.nicolasblock.com/page_images/shim.gif" width="20" height="24"> 
+    </td>
+    <td bgcolor="#FFFFFF" width="105" align="left" valign="top" class="maintext"> 
+       <script Language="JavaScript" Type="text/javascript"><!--
+function FrontPage_Form1_Validator(theForm)
+{
+
+  if (theForm.Name.value == "")
+  {
+    alert("Please enter a value for the \"Name\" field.");
+    theForm.name.focus();
+    return (false);
+  }
+
+  if (theForm.Address.value == "")
+  {
+    alert("Please enter a value for the \"Address\" field.");
+    theForm.shipaddress.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-- . () \t\r\n\f";
+  var checkStr = theForm.Phone.value;
+  var allValid = true;
+  var validGroups = true;
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit, whitespace and \"- . ()\" characters in the \"Phone Number\" field.");
+    theForm.Phone.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-- . () \t\r\n\f";
+  var checkStr = theForm.Fax.value;
+  var allValid = true;
+  var validGroups = true;
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit, whitespace and \"- . ()\" characters in the \"Fax\" field.");
+    theForm.Fax.focus();
+    return (false);
+  }
+
+  if (theForm.Email.value == "")
+  {
+    alert("Please enter a value for the \"Email Address\" field.");
+    theForm.Email.focus();
+    return (false);
+  }
+
+  var checkOK = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzƒŠŒŽšœžŸÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿ0123456789-@ . _ -";
+  var checkStr = theForm.Email.value;
+  var allValid = true;
+  var validGroups = true;
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+  }
+  if (!allValid)
+  {
+    alert("Please enter only letter, digit and \"@ . _ -\" characters in the \"Email Address\" field.");
+    theForm.Email.focus();
+    return (false);
+  }
+
+  if (theForm.Order.value == "")
+  {
+    alert("Please enter a value for the \"order\" field.");
+    theForm.Order.focus();
+    return (false);
+  }
+
+  if (theForm.Card.selectedIndex < 0)
+  {
+    alert("Please select one of the \"Payment Type\" options.");
+    theForm.Card.focus();
+    return (false);
+  }
+
+  if (theForm.Card.selectedIndex == 0)
+  {
+    alert("The first \"Payment Type\" option is not a valid selection.  Please choose one of the other options.");
+    theForm.Card.focus();
+    return (false);
+  }
+
+if (theForm.Shipping.selectedIndex < 0)
+  {
+    alert("Please select one of the \"shipping\" options.");
+    theForm.Shipping.focus();
+    return (false);
+  }
+
+  if (theForm.Shipping.selectedIndex == 0)
+  {
+    alert("The first \"Shipping\" option is not a valid selection.  Please choose one of the other options.");
+    theForm.Shipping.focus();
+    return (false);
+  }
+
+
+  var checkOK = "0123456789-- . \t\r\n\f";
+  var checkStr = theForm.Number.value;
+  var allValid = true;
+  var validGroups = true;
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit, whitespace and \"- .\" characters in the \"Credit Card Number\" field.");
+    theForm.Number.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-";
+  var checkStr = theForm.Year.value;
+  var allValid = true;
+  var validGroups = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"Expiration Year\" field.");
+    theForm.ccyear.focus();
+    return (false);
+  }
+  return (true);
+}
+function showBranch(branch){
+	var objBranch = document.getElementById(branch).style;
+	if(objBranch.display=="block")
+		objBranch.display="none";
+	else
+		objBranch.display="block";
+}
+</script>
+<form method="POST" action="order" onsubmit="return FrontPage_Form1_Validator(this)" name="myForm">
+              
+            
+        <table width="750" border="0" cellspacing="10" cellpadding="10" bgcolor="#000066">
+          <tr> 
+            <td colspan="3"><font color="#FFFFFF">&nbsp;</font> </td>
+          </tr>
+          <tr> 
+            <td width="29%" valign="top" align="right"><font color="#FFFFFF">Name*: 
+              </font></td>
+            <td width="71%" valign="top" colspan="2"> <font color="#FFFFFF"> 
+              <input type="text" name="Name" size="40" class="linkbar">
+              </font></td>
+          </tr>
+          <tr> 
+            <td width="29%" valign="top" align="right"><font color="#FFFFFF">Shipping 
+              Address*:</font></td>
+            <td width="71%" valign="top" colspan="2"> <font color="#FFFFFF"> 
+              <textarea name="Address" cols="40" rows="4" class="linkbar"></textarea>
+              </font></td>
+          </tr>
+          <tr> 
+            <td width="29%" valign="top" align="right"><font color="#FFFFFF">Billing 
+              Address:<br>
+              </font></td>
+            <td width="71%" valign="top" colspan="2"> <font color="#FFFFFF"> 
+              <textarea name="Billing" cols="40" rows="4" class="linkbar">(List only if different from shipping address)</textarea>
+              </font></td>
+          </tr>
+          <tr> 
+            <td width="29%" valign="top" align="right"><font color="#FFFFFF">Phone:</font></td>
+            <td width="71%" valign="top" colspan="2"> <font color="#FFFFFF"> 
+               <input type="text" name="Phone" size="20" class="linkbar">
+              </font></td>
+          </tr>
+          <tr> 
+            <td width="29%" valign="top" align="right"><font color="#FFFFFF">Fax:</font></td>
+            <td width="71%" valign="top" colspan="2"> <font color="#FFFFFF"> 
+               <input type="text" name="Fax" size="20" class="linkbar">
+              </font></td>
+          </tr>
+          <tr> 
+            <td width="29%" valign="top" align="right"><font color="#FFFFFF">Email*:</font></td>
+            <td width="71%" valign="top" colspan="2"> <font color="#FFFFFF"> 
+              <input type="text" name="Email" size="25" class="linkbar">
+              </font></td>
+          </tr>
+          <tr> 
+            <td width="29%" valign="top" align="right"><font color="#FFFFFF">Mask 
+              Orders*:<br>
+              <font size="2" color="#CCCCCC">(Include specifics)</font></font></td>
+            <td width="71%" valign="top" colspan="2"> <font color="#FFFFFF"> 
+              <textarea name="Order" cols="40" rows="8" class="linkbar">i.e.
+Name:  Cignetta Light Blue/Silver
+Item #: MC100LS 
+Price: $238.00
+
+Specifics if required:  
+ie. "color"  "set"  "female mask"  " male mask"  "#Items: 4"</textarea>
+              </font></td>
+          </tr>
+<tr> 
+            <td width="29%" valign="top" align="right"><font color="#FFFFFF">Shipping*:</font></td>
+            <td width="71%" valign="top" colspan="2"> <font color="#FFFFFF"> 
+              <select name="Shipping" class="linkbar" size="1">
+                <option>(select shipping)</option>
+                <option>UPS Ground</option>
+		<option>UPS 3-day</option>
+		<option>UPS 2-day</option>
+		<option>UPS Overnight</option>
+		<option>Postal Service (for international sales)</option>
+		<option>Other (indicate below)</option>
+              </select>
+              </font></td>
+          </tr>
+	<tr><td></td><td colspan=2><font color="#FFFFFF">* Prices vary depending on selected shipping option, <br>destination,
+size, and weight. Mask Italia will obtain a <br>quote for shipping and charge customers accordingly.</font>
+</td></tr>
+          <tr> 
+            <td width="29%" valign="top" align="right"><font color="#FFFFFF">Comments/Questions:<br>
+              </font></td>
+            <td width="71%" valign="top" colspan="2"> <font color="#FFFFFF"> 
+              <textarea name="Comments" cols="40" rows="6" class="linkbar"></textarea>
+              </font></td>
+          </tr>
+          <tr> 
+            <td width="29%" valign="top" align="right"><font color="#FFFFFF">Payment 
+              Type*:</font></td>
+            <td width="71%" valign="top" colspan="2"> <font color="#FFFFFF"> 
+              <select name="Card" class="linkbar" size="1">
+                <option>(select payment)</option>
+                <option>Visa</option>
+                <option>MC</option>
+                <option>Amex</option>
+                <option>Discover</option>
+                <option>Check</option>
+              </select>
+              </font></td>
+          </tr>
+          <tr> 
+            <td width="29%" valign="top" align="right"><font color="#FFFFFF">Credit 
+              Card Number:</font></td>
+            <td width="71%" colspan="2"> <font color="#FFFFFF"> 
+              <input type="text" name="Number" size="50" class="linkbar">
+              </font></td>
+          </tr>
+          <tr> 
+            <td width="29%" valign="middle" align="right"><font color="#FFFFFF">Credit 
+              Card Expiration Date:</font></td>
+			<input type="hidden" name="Expiration Date" value="&nbsp;">
+            <td width="71%" valign="top" colspan="2"><font color="#FFFFFF">month 
+              <input type="text" name="Month" size="2" class="linkbar">
+              - year
+			  <input type="text" name="Year" size="4" class="linkbar">
+              </font></td>
+          </tr>
+	<tr>
+	<td width="29%" valign="middle" align="right"><font color="#FFFFFF">CVN Number:</font></td>
+	<td width="29%" valign="top">
+	<input type="text" name="CVN" size="4" maxlength="4" class="linkbar"><a href="javascript:showBranch('branch1')" style="color:aqua;text-decoration:underline;font-size:10px;font-weight:normal;margin-left:10px;">What's this?</a></td>
+</tr>
+<tr><td></td><td colspan="2"><br><span id="branch1" class="branch" style="display:none; color:#FFFFFF;">
+What is a Card Validation Number (CVN)?<br>
+This is an authentication feature established by credit and debit<br> card companies to further efforts towards reducing fraud on <br>online transactions.<br><br> 
+The CVN is printed on your Visa, Master Card and Discover<br>cards in the signature area of the back of the card. It is the last<br>3 digits AFTER the credit card number in the signature area of <br>the card.<br><br>American Express cards show the CVN printed above and to<br>the right of the imprinted card number on the front of the card.</span></td></tr>
+          <tr> 
+            <td align="right"> 
+              <p>&nbsp;</p>
+              <p><font color="#FFFFFF"> </font></p>
+            </td>
+            <td colspan="2"> 
+              <p>&nbsp;</p>
+              <p><font color="#FFFFFF"> </font></p>
+            </td>
+          </tr>
+          <tr> 
+            <td colspan="3"> 
+              <div align="center"><font color="#FFFFFF"> 
+                <input type="submit" name="Submit" value="Submit" class="linkbar">
+                <input type="reset" name="reset" value="Reset" class="linkbar">
+                </font></div>
+            </td>
+          </tr>
+          <tr> 
+            <td colspan="3"> 
+              <div align="center">
+                <div align="center">
+                  <p><font color="#FFFFFF">Hitting submit will email order directly 
+                    to Mask Italia. <br>
+                    </font></p>
+                  
+                </div>
+                <div align="center">
+                  <p align="left">&nbsp;
+                  <p align="left"><b><font size="2" color="#FFFFFF">Mask Italia 
+                    Return Policy<br>
+                    </font></b><font size="1" color="#FFFFFF">Mask Italia does 
+                    not issue refunds of any kind, at any time. If you are dissatisfied 
+                    with your item, we do offer credit for use on future purchases 
+                    for yourself or for a gift. A claim for store credit must 
+                    be made within seven days of receipt. For items which have 
+                    been damaged in shipment, we require that a claim be made 
+                    on the day of receipt due to UPS requirements. 
+                    Please save all packaging that your item arrived in for purposes 
+                    of the claim.</font></div>
+            </div>
+            </td>
+          </tr>
+        </table>
+        <p>&nbsp;</p>
+      </form>
+    </td>
+    <td bgcolor="#FFFFFF" align="left" valign="top" colspan="2">&nbsp; </td>
+  </tr>
+  <tr> 
+    <td height="125" colspan="4" align="right" valign="top">
+
+<div align="right"><span class="copyright"> <b>Copyright 2003 Mask Italia. All 
+  Rights Reserved.&nbsp;&nbsp;<br>
+  Site Designed by <a href="http://www.seymourdesigns.com" target="_blank" onFocus="if(this.blur)this.blur()"><font color="#000000">Seymour 
+  Designs</font></a>&nbsp;&nbsp;</b></span></div>
+<!-- #EndLibraryItem -->&nbsp;&nbsp;&nbsp;</td>
+  </tr>
+  <tr align="right" valign="bottom" > 
+    <td colspan="4">&nbsp; </td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=8" />
+	<link rel="stylesheet" href="http://www.maskitalia.com/assets/stylesheets/screen-1.06.css" type="text/css">
+	<script type="text/javascript" src="http://www.maskitalia.com/assets/javascripts/script-1.01.js"></script>
+<title>Mask Italia Magical Mask Events &amp; Parties</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META NAME="Keywords" CONTENT="venetian carnival masks,costume masks,masquerade ball masks,mask collections,mardi gras masks,mardi gras feather masks,mardi gras ball costumes,italian mask,italian classic masks,handmade venetian masks,handmade italian masks,halloween mask,feather mask,decorative mask,costume ball masks,carnival masks,authentic venetian masks">
+<META NAME="Description" CONTENT="Imported Venetian masks, Italian masks, feather masks, costume ball masks, and mask collections.  Masks handmade in the traditional spirit of Venice, Italy. Come in to view the many mask styles, sizes, and colors.">
+<meta name="robots" content="all">
+<meta name="classification" content="shopping, apparel, specialty, costumes, masks">
+<meta http-equiv="imagetoolbar" content="no" > 
+</head>
+<body class="events page">
+	<div id="doc4" class="yui-t7">
+		<div id="hd" onclick="javascript:document.location='http://www.maskitalia.com';" style="cursor:hand;cursor:pointer;"><h1><span class="hide">Mask Italia: Importer of Handmade Italian Masks</span></h1>
+			<div id="main_menu">
+				<ul id="main_menu_items">
+					<li id="main_menu_item1" class="first"><a href="lucia.htm" title="Italian Masks &amp; Artworks"><span class="hide">Masks &amp; Artwork</span></a></li>
+					<li id="main_menu_item2"><a href="eventsparties.htm" title="Sponsored Events and Parties with Venetian Masks"><span class="hide">Events &amp; Parties</span></a></li>
+					<li id="main_menu_item3"><a href="wholesale.htm" title="Wholesale Information on venetian masks and italian masks"><span class="hide">Wholesale</span></a></li>
+					<li id="main_menu_item4"><a href="maskhistory.htm" title="History of Venetian Masks"><span class="hide">History</span></a></li>
+					<li id="main_menu_item5" class="last"><a href="maskitaliaheadquarters.htm" title="Mask Italia Headquarters Locations"><span class="hide">Headquarters</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="bd">
+			<div class="yui-g">
+				<div id="phone_number"></div>
+				<br class="cl">
+				<div id="side_menu_header"><span class="hide">Events &amp; Parties</span></div>
+			</div>
+			<div class="yui-g">
+				<div class="yui-u first">
+					<div class="page-image-container">
+					<img name="Ad_Image" src="http://www.maskitalia.com/assets/images/page/events/A001.jpg" alt="Mask Italia Sponsored Events and Parties">
+					
+					</div>
+				</div>
+				<div class="yui-u">
+					<div class="half-page-text-container">
+						<p>Mask Italia is proud to contribute to charity organizations that are making a better community for all of us. In the past year, we have been involved with the following charities and organizations in various capacities:</p>
+						<p class="list">&middot; The Leukemia &amp; Lymphoma Society<br>
+						&middot; The Joe Alioto Veronese Campaign '01<br>
+						&middot; Hands On San Francisco<br>
+						&middot; The Little Jim Foundation <br>
+						&middot; The Okizu Foundation <br>
+						&middot; Burning Man <br>
+						&middot; Children's Hospital of San Diego<br>
+						&middot; The Northern Light School<br>
+						&middot; Napa Valley Wine Auction <br>
+						&middot; Friends of Moscone <br>
+						&middot; The Grove Shopping Center <br>
+						&middot; Western Independent Bankers <br>
+						&middot; Tenderloin Neighborhood Development Corporation <br> 
+						&middot; National Center for Missing and Exploited Children <br>
+						&middot; Italo Museo <br>
+						&middot; Friends of Roman Cats <br>
+						&middot; BRAVO!</p>
+						<p>If you are interested in hosting a masquerade ball, creating a magical evening that no one will forget, or to discuss our variety of services and partnership opportunities for your special evening, please contact us at (504) 598-1998 or <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#115;&#107;&#105;&#116;&#097;&#108;&#105;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">email</a>.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="ft">&copy; 2010 Mask Italia</div>
+	</div>
+<script type="text/javascript" charset="utf-8">
+	base = "http://www.maskitalia.com/assets/images/page/events/";
+src = ["A002.jpg", "A003.jpg", "A004.jpg", "A005.jpg", "A006.jpg", "A007.jpg", "A008.jpg", "A009.jpg","A010.jpg","A011.jpg","A012.jpg","A013.jpg","A015.jpg","A016.jpg","A017.jpg","B020.jpg","B013.jpg","B008.jpg","B033.jpg","B012a.jpg","B004.jpg","B003.jpg","B001.jpg","B032.jpg","B016.jpg","B015.jpg","B010.jpg","B031.jpg","B028.jpg","B025.jpg","B024.jpg","B023.jpg","B014.jpg","B007.jpg","B006.jpg","B002.jpg","B017.jpg","B009.jpg","B030.jpg","B011.jpg","B029.jpg","B005.jpg","B018.jpg","B019.jpg"]
+	duration = 3;
+	ads=[]; 
+	ct=0;
+	function switchAd() {
+		var n=(ct+1)%src.length;
+		if (ads[n] && (ads[n].complete || ads[n].complete==null)) {
+			document["Ad_Image"].src = ads[ct=n].src;
+		}
+		ads[n=(ct+1)%src.length] = new Image;
+		ads[n].src = base + src[n];
+		setTimeout("switchAd()",duration*1000);
+	}
+	function doLink(){
+		location.href = url[ct];
+	} 
+	onload = function(){
+		if (document.images)
+		switchAd();
+	}
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1354660-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
